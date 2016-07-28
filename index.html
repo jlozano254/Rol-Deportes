@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rol de juegos Dr.Rubén Acosta 2016</title>
+    <!-- <meta http-equiv="refresh" content="300"> -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <link rel="shortcut icon" href="imgs/gazette-kcrg.png" />
+    <!-- Mobile meta tags-->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="cleartype" content="on">
+    <link rel="apple-touch-icon" href="imgs/gazette-kcrg.png"/>
+    <!-- Facebook meta tags-->
+    <meta property="og:title" content="Rol de juegos Dr.Rubén Acosta 2016"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="Project URL goes here"/>
+    <meta property="og:image" content="imgs/gazette-kcrg.png"/>
+    <meta property="og:site_name" content="The Gazette/KCRG"/>
+    <meta property="og:description" content="Rol de juegos Dr.Rubén Acosta 2016" />
+    <!-- Twitter meta tags -->
+    <meta property="twitter:site" content="@gazettedotcom">
+    <meta property="twitter:card" content="Short description goes here">
+    <meta property="twitter:url" content="Project URL goes here">
+    <meta property="twitter:title" content="Rol de juegos Dr.Rubén Acosta 2016">
+    <meta property="twitter:description" content="Rol de juegos Dr.Rubén Acosta 2016">
+    <meta property="twitter:image" content="imgs/gazette-kcrg.png">
+
+    <!-- INCLUDES -->
+    <!-- Base styles: Libraries -->
+    <link rel="stylesheet" href="css/lib/bootstrap.css" />
+    <link rel="stylesheet" href="css/lib/bootstrap-responsive.css" />
+    <link rel="stylesheet" href="css/lib/font-awesome-4.2.0.css" />
+    <link rel="stylesheet" href="css/lib/jquery.dataTables.min.css" />
+    
+    <!-- Base styles -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/base-datatable.css" />
+
+    <!-- JS: Libraries -->
+    <script src="js/lib/jquery-1.11.1.js"></script>
+    <script src="js/lib/jquery.dataTables.min.js"></script>
+    <script src="js/lib/tabletop.js"></script>
+    <script src="js/lib/underscore.js"></script>
+    <script src="js/lib/handlebars-v1.3.0.js"></script>
+    <!-- End Google Analytics Javascript -->
+</head>
+<body>
+    <!-- Content-->
+    <div class="content">
+        <!-- Header-->
+        <div class="header">
+            <div class="logos">
+            </div>
+            <h1 class="hide-iframe"></h1>
+            <!-- Share-->
+            <div id="share">
+                <ul>
+                <li id="share-next-li">
+                    <a title="Facebook" href="https://www.facebook.com/groups/721298387969846/" target="_blank"><div class="fa fa-facebook fa-2x icons-share"></div></a>
+                </li>
+                </ul>
+            <!-- Closes share-->
+            </div>
+        <!-- Closes header-->
+        </div>
+
+    <!-- CONTENT GOES HERE -->
+    <div id="body-content">
+        <h1 class="hide-iframe">Torneo Dr.Ruben Acosta (Rol de juegos)</h1>
+        <!-- Subhead -->
+        <div class="header header-sub hide-desktop show-iframe">
+            <div class="header-sub-header">
+                <p>Rol de juegos 2016</p>
+            </div>
+        </div>
+        <!-- Content box-->
+        <div id="content-box">
+            <p id="first-p" class="intro-text">
+                Rol de juegos para torneo nacional Ruben Acosta Desarrollado por Jesus Lozano (jesusemanuel.254@gmail.com) [Para mayor información pueden visitar el sitio oficial en facebook o revisar el pdf para aclaraciones]
+            </p>
+            <p>
+                <strong>** Por lo pronto solo está agregado el rol de platino, si desea agregar más o corregir horarios puedes hacerlo dando click <a href="https://docs.google.com/spreadsheets/d/18oR4Cuf8JxQEtsNKiSu5PIIEo0dSFMIePKnwFgsk788/edit?usp=sharing">aquí</a> o yendo a: https://docs.google.com/spreadsheets/d/18oR4Cuf8JxQEtsNKiSu5PIIEo0dSFMIePKnwFgsk788/edit?usp=sharing (Todo es agregarregado automáticamente lo cual es una gran ventaja) **
+                </strong>
+            </p>
+            <table id="searchable-table" class="display">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Duelo</th>
+                        <th>Lugar</th>
+                        <th>Categoría</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        <!-- Close content box-->
+       </div>
+       <div id="footer" class="header hide-desktop show-mobile">
+            <a href="#">Scroll to top</a>
+        </div>
+    <!-- Close body content-->
+    </div>
+    <!-- Templates -->
+    <script id="datatable-template" type="text/x-handlebars-template">
+        {{#each elements}}
+            <tr>
+                <td data-title="Fecha:">{{ fecha }}</td>
+                <td data-title="Hora:">{{ hora }}</td>
+                <td data-title="Duelo:">{{ duelo }}</td>
+                <td data-title="Lugar:">{{ lugar }}</td>
+                <td data-title="Categoría:">{{ categoria }}</td>
+            </tr>
+        {{/each}}
+    </script>
+    <!-- Custom JS -->
+    <script src="js/base.js"></script>
+    <script src="js/datatable-tabletop-load.js"></script>
+    <!-- Close content-->
+    </div>
+    </body>
+</html>
