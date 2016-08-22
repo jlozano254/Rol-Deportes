@@ -1,4 +1,4 @@
-Para ver el rol -> https://jlozanomaltos.github.io
+Live Demo -> https://jlozano254.github.io/Rol-Deportes/
 Código fuente basado en un template de datatable.
 
 Este código fuente está pensado para utilizarse y visualizar los roles del torneo Dr.Rubén Acosta 2016 de voleibol en México y utiliza google stylesheets.
